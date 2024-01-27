@@ -12,6 +12,13 @@ ul {
     list-style: none;
 }
 
+.container {
+    max-width: 320px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
 /****************** HEADER**/
 .webi {
     color: #4D5AE5;
@@ -94,24 +101,27 @@ ul {
 /* **********************HERO********************** */
 .sctn-main {
     background: #2E2F42;
-    padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    padding: 72px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mobile.jpg);
     background-repeat: no-repeat;
-    max-width: 1440px;
+    width: 320px;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
+
 }
 
 .section-one {
-    color: #FFF;
+    color: var(--WHITE, #FFF);
     text-align: center;
     font-family: Roboto;
-    font-size: 56px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    text-transform: capitalize;
+    max-width: 216px;
     margin: 0 auto;
 
 }
@@ -124,23 +134,15 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
     color: #ffffff;
     display: block;
     min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
-    margin: 48px auto 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    margin: 72px auto 0;
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: #404BBF;
-}
 
 
 /* **********************ABILITY***************************** */
@@ -207,12 +209,7 @@ ul {
 
 
 /* -----------------TEAM-------------------------- */
-.container {
-    max-width: 320px;
-    padding: 0 15px;
-    margin: 0 auto;
 
-}
 
 .section-team {
     background: #F4F4FD;
@@ -379,10 +376,9 @@ ul {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
     margin-bottom: 16px;
     text-align: center;
-
+    display: block;
 }
 
 .footer-p {
@@ -411,9 +407,7 @@ ul {
     margin-bottom: 72px;
 }
 
-
-
-.footer-socials .footer-icons-p {
+.footer-icons-p {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -422,6 +416,7 @@ ul {
     color: var(--WHITE, #FFF);
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-list-icons {
@@ -449,16 +444,11 @@ ul {
     background-color: #4D5AE5;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.icon-link-footer:hover,
-.icon-link-footer:focus {
-    background-color: #31D0AA;
-}
-
-.subscribe-field {
-    margin-left: 80px;
+.footer-socials {
+    margin-bottom: 72px;
 }
 
 
@@ -471,17 +461,18 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-form {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    text-align: center;
+
 }
 
-
-
 .input-subscribe {
-    width: 264px;
+    width: 288px;
     height: 40px;
     font-size: 12px;
     line-height: 2;
@@ -490,9 +481,11 @@ ul {
     background-color: transparent;
     outline: none;
     border-radius: 4px;
-    border: 1px solid #FFF;
+    border: 1px solid var(--WHITE, #FFF);
+    opacity: 0.3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: #FFF;
+    margin-bottom: 16px;
 }
 
 
@@ -503,6 +496,7 @@ ul {
 
 .btn-subscribe {
     display: flex;
+    align-self: center;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -515,7 +509,7 @@ ul {
     letter-spacing: 0.04em;
     border-radius: 4px;
     background: #4D5AE5;
-    min-width: 165px;
+    width: 165px;
     height: 40px;
     border: none;
 }
