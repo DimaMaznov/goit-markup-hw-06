@@ -33,8 +33,6 @@ ul {
 }
 
 /****************** HEADER**/
-
-
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -55,10 +53,6 @@ ul {
 .adrs-menu {
     display: none;
 
-}
-
-.adrs:last-child {
-    margin-right: 0;
 }
 
 .navigation {
@@ -95,6 +89,8 @@ ul {
     padding: 0;
     background-color: transparent;
     cursor: pointer;
+    border: none;
+    margin-left: auto;
 }
 
 /* **********************HERO********************** */
@@ -122,7 +118,6 @@ ul {
     text-transform: capitalize;
     max-width: 216px;
     margin: 0 auto;
-
 }
 
 .btn {
@@ -140,8 +135,14 @@ ul {
     border: none;
     border-radius: 4px;
     margin: 72px auto 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.btn:hover,
+.btn:focus {
+    background-color: #404BBF;
+}
 
 
 /* **********************ABILITY***************************** */
@@ -209,7 +210,6 @@ ul {
 
 /* -----------------TEAM-------------------------- */
 
-
 .section-team {
     background: #F4F4FD;
     padding: 96px 0;
@@ -233,7 +233,6 @@ ul {
     flex-wrap: wrap;
     gap: 72px;
     justify-content: center;
-
 }
 
 .list-item {
@@ -241,10 +240,7 @@ ul {
     width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-
-
 }
-
 
 .team-container {
     padding: 32px 0;
@@ -280,16 +276,17 @@ ul {
 }
 
 .team-icons-list {
-
     width: 40px;
     height: 40px;
-
 }
 
 .team-icon {
     fill: #f4f4fd;
 }
 
+.list-item:last-child {
+    margin-right: 0;
+}
 
 .team-icons-list:last-child {
     margin-right: 0;
@@ -303,7 +300,12 @@ ul {
     background-color: #4D5AE5;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.icon-link-team:hover,
+.icon-link-team:focus {
+    background-color: #404BBF;
 }
 
 /* ****************PORTFOLIO************************ */
@@ -315,18 +317,33 @@ ul {
 .portfolio-title {
     margin-bottom: 72px;
     text-align: center;
+    color: #2E2F42;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
-
+    gap: 48px;
 }
 
 .port-li {
     width: 288px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+.port-li:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
 .overlay {
@@ -358,6 +375,14 @@ ul {
     letter-spacing: 0.02em;
 }
 
+.port-li:nth-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.port-li:nth-child(3n) {
+    margin-right: 0;
+}
+
 /* *****##############***FOOTER***###############***** */
 
 .footer-back-color {
@@ -380,15 +405,6 @@ ul {
     display: block;
 }
 
-.footer-p {
-    color: #F4F4FD;
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    max-width: 264px;
-}
-
 .studio-footer {
     color: #F4F4FD;
     font-family: Raleway, sans-serif;
@@ -401,18 +417,28 @@ ul {
 
 }
 
+
+.footer-p {
+    color: #F4F4FD;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+
+
 .footer-logo-container {
 
     margin-bottom: 72px;
 }
 
 .footer-icons-p {
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    color: var(--WHITE, #FFF);
+    color: #FFF;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     text-align: center;
@@ -443,7 +469,12 @@ ul {
     background-color: #4D5AE5;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.icon-link-footer:hover,
+.icon-link-footer:focus {
+    background-color: #31D0AA;
 }
 
 .footer-socials {
@@ -495,8 +526,8 @@ ul {
 
 .btn-subscribe {
     display: flex;
-    align-self: center;
     align-items: center;
+    align-self: center;
     justify-content: center;
     cursor: pointer;
     color: #FFF;
@@ -516,9 +547,6 @@ ul {
 .footer-subscribe {
     margin-left: 16px;
 }
-
-
-
 
 
 
