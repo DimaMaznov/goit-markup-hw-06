@@ -88,11 +88,21 @@
         color: #404BBF
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
     /* **********************HERO********************** */
     .sctn-main {
         padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tabl.jpg);
         width: 768px;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .sctn-main {
+            background-image: url(../images/bg-tab-2x.jpg);
+        }
     }
 
     .section-one {
@@ -136,6 +146,10 @@
     }
 
     /* *****##############***FOOTER***###############***** */
+    .footer-back-color {
+        padding: 96px 108px;
+    }
+
     .web {
         text-align: unset;
     }
@@ -183,4 +197,13 @@
     .btn-subscribe {
         margin-bottom: auto;
     }
+
+    /* *****************MODAL***************  */
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
+
 }

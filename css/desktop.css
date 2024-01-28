@@ -95,6 +95,12 @@
         width: 1440px;
     }
 
+    @media (min-resolution: 192dpi) {
+        .sctn-main {
+            background-image: url(../images/bg-desktop-2x.jpg);
+        }
+    }
+
     .section-one {
         font-size: 56px;
         line-height: 1.07;
