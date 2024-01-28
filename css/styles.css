@@ -107,11 +107,6 @@ ul {
 
 }
 
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
 
 
 .mobile-close-btn {
@@ -225,7 +220,7 @@ ul {
 
 @media (min-resolution: 192dpi) {
     .sctn-main {
-        background-image: url(../images/bg-mob-2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mob-2x.jpg);
     }
 }
 
@@ -692,8 +687,7 @@ ul {
 }
 
 .modal {
-    /* width: 408px;
-    min-height: 584px; */
+
     width: 288px;
     min-height: 623px;
     position: absolute;

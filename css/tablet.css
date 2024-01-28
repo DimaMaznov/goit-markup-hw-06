@@ -101,7 +101,7 @@
 
     @media (min-resolution: 192dpi) {
         .sctn-main {
-            background-image: url(../images/bg-tab-2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab-2x.jpg);
         }
     }
 
