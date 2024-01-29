@@ -27,6 +27,7 @@
 
     .adrs-menu {
         display: flex;
+        flex-direction: row;
         gap: 40px;
     }
 
@@ -238,6 +239,7 @@
 
     .footer-logo-container {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-icons-p {
@@ -258,10 +260,14 @@
         flex-direction: unset;
     }
 
+    .footer-socials {
+        margin-bottom: 0;
+    }
 
     .input-subscribe {
         width: 264px;
         opacity: unset;
+        margin-bottom: 0;
     }
 
 }

@@ -23,10 +23,7 @@
         margin-right: 0;
     }
 
-    .adrs-menu {
-        display: block;
-        gap: 20px;
-    }
+
 
     .adrs:last-child {
         margin-right: 0;
@@ -60,12 +57,19 @@
         bottom: -1px;
     }
 
+    .adrs-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 
 
     .nav:hover,
     .nav:focus {
         color: #404BBF
     }
+
+
 
     .adrs-section {
         font-style: normal;
